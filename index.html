@@ -111,6 +111,37 @@ window.onload = function(e) {
 					<source data-fluid-hd src='https://cdn.fluidplayer.com/videos/valerian-1080p.mkv' title="1080p" type='video/mp4' />
 					<source data-fluid-hd src='https://cdn.fluidplayer.com/videos/valerian-720p.mkv' title="720p" type='video/mp4' />
 					<source src='https://cdn.fluidplayer.com/videos/valerian-480p.mkv' title="480p" type='video/mp4' />
+				<!--  testing instream here -->
+					<script type="application/javascript">
+    var testVideo = fluidPlayer(
+        "my-video",
+        {
+            vastOptions: {
+                "adList": [
+                    {
+                        "roll": "preRoll",
+                        "vastTag": "https://s.adnflow.com/splash.php?idzone=222"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://s.adnflow.com/splash.php?idzone=222",
+                        "timer": 8
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://s.adnflow.com/splash.php?idzone=222",
+                        "timer": 10
+                    },
+                    {
+                        "roll": "postRoll",
+                        "vastTag": "https://s.adnflow.com/splash.php?idzone=222"
+                    }
+            ]
+        }
+}
+    );
+</script>
+						<!--  testing instream here -->
 					</video>
 				</div>
 				
